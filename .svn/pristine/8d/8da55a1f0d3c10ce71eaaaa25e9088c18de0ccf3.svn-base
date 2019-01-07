@@ -1,0 +1,87 @@
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3574e434]
+Initiating transaction commit
+Committing JDBC transaction on Connection [HikariProxyConnection@1001590066 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7]
+Releasing JDBC Connection [HikariProxyConnection@1001590066 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] after transaction
+Returning JDBC Connection to DataSource
+Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+View name 'success', model {page=Page{count=true, pageNum=3, pageSize=3, startRow=6, endRow=9, total=7, pages=3, reasonable=true, pageSizeZero=true}[com.cssl.pojo.Users@2f64ab35]}
+Forwarding to [/success.jsp]
+Completed 200 OK
+GET "/success?pageIndex=5", parameters={masked}
+Mapped to public org.springframework.ui.Model com.cssl.controller.MyController.findPage(int,org.springframework.ui.Model)
+Creating new transaction with name [com.cssl.service.impl.UsersServiceImpl.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+Acquired Connection [HikariProxyConnection@1688577671 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] for JDBC transaction
+Switching JDBC Connection [HikariProxyConnection@1688577671 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] to manual commit
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a625463]
+Cache Hit Ratio [SQL_CACHE]: 0.8
+JDBC Connection [HikariProxyConnection@1688577671 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] will be managed by Spring
+==>  Preparing: SELECT count(0) FROM users 
+==> Parameters: 
+<==      Total: 1
+==>  Preparing: SELECT * FROM users order by id desc LIMIT ?, ? 
+==> Parameters: 6(Integer), 3(Integer)
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a625463]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a625463]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a625463]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a625463]
+Initiating transaction commit
+Committing JDBC transaction on Connection [HikariProxyConnection@1688577671 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7]
+Releasing JDBC Connection [HikariProxyConnection@1688577671 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] after transaction
+Returning JDBC Connection to DataSource
+Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+View name 'success', model {page=Page{count=true, pageNum=3, pageSize=3, startRow=6, endRow=9, total=7, pages=3, reasonable=true, pageSizeZero=true}[com.cssl.pojo.Users@1abed555]}
+Forwarding to [/success.jsp]
+Completed 200 OK
+GET "/success?pageIndex=5", parameters={masked}
+Mapped to public org.springframework.ui.Model com.cssl.controller.MyController.findPage(int,org.springframework.ui.Model)
+Creating new transaction with name [com.cssl.service.impl.UsersServiceImpl.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+Acquired Connection [HikariProxyConnection@170559510 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] for JDBC transaction
+Switching JDBC Connection [HikariProxyConnection@170559510 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] to manual commit
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed6723]
+Cache Hit Ratio [SQL_CACHE]: 0.8333333333333334
+JDBC Connection [HikariProxyConnection@170559510 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] will be managed by Spring
+==>  Preparing: SELECT count(0) FROM users 
+==> Parameters: 
+<==      Total: 1
+==>  Preparing: SELECT * FROM users order by id desc LIMIT ?, ? 
+==> Parameters: 6(Integer), 3(Integer)
+<==      Total: 1
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed6723]
+Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed6723]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed6723]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed6723]
+Initiating transaction commit
+Committing JDBC transaction on Connection [HikariProxyConnection@170559510 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7]
+Releasing JDBC Connection [HikariProxyConnection@170559510 wrapping com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7] after transaction
+Returning JDBC Connection to DataSource
+Selected 'text/html' given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8]
+View name 'success', model {page=Page{count=true, pageNum=3, pageSize=3, startRow=6, endRow=9, total=7, pages=3, reasonable=true, pageSizeZero=true}[com.cssl.pojo.Users@74df8fbc]}
+Forwarding to [/success.jsp]
+Completed 200 OK
+HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+HikariPool-2 - Pool stats (total=10, active=0, idle=10, waiting=0)
+Application shutdown requested.
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@121f02a6, started on Wed Dec 12 15:33:34 CST 2018
+Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+Unregistering JMX-exposed beans on shutdown
+Unregistering JMX-exposed beans
+Shutting down ExecutorService 'applicationTaskExecutor'
+HikariPool-2 - Shutdown initiated...
+HikariPool-2 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6c3c17e7: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@fc585ee: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4ef88fd5: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7ffc46b2: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2ed7709a: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3fdf5e35: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@59352321: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@52382d68: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@454df279: (connection evicted)
+HikariPool-2 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5e6c4b5e: (connection evicted)
+HikariPool-2 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+HikariPool-2 - Shutdown completed.

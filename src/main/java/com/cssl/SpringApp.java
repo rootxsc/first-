@@ -1,0 +1,25 @@
+package com.cssl;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+
+//@EnableTransactionManagement
+@ServletComponentScan("com.cssl.web")
+@MapperScan(basePackages="com.cssl.dao")
+@SpringBootApplication		//SpringBoot核心注解
+public class SpringApp {
+ 
+	public static void main(String[] args) {
+
+		//123
+		SpringApplication.run(SpringApp.class, args);
+		
+		/*SpringApplication sa = new SpringApplication(SpringApp.class);
+		sa.setBannerMode(Banner.Mode.OFF);
+		sa.run(args);*/
+
+	}
+
+}
